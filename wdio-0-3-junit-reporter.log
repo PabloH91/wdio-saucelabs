@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="E2E_Tests_Inventory_Page_Functionality" timestamp="2020-08-05T10:42:45" time="6.298" tests="19" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="E2E Tests - Inventory Page - Functionality"/>
+      <property name="capabilities" value="chrome.84_0_4147_105.macosx"/>
+      <property name="file" value="./test/specs/pages/inventory.js"/>
+    </properties>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_load_Inventory_page" time="2.039">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/url - {"url":"https://www.saucedemo.com/inventory.html"}
+RESULT: {"url":"https://www.saucedemo.com/inventory.html"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/url - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_have_six_6_items" time="0.053">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0b38a7f4-2774-4052-b227-726e568f7642/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_change_button_text_after_clicking_Add_to_Cart_button" time="0.144">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0b38a7f4-2774-4052-b227-726e568f7642/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6463ef39-d844-48c3-912e-7a7c091779b5/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/679bb5dc-ca56-41d7-9e1f-7cb0377dd45b/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0b38a7f4-2774-4052-b227-726e568f7642/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6463ef39-d844-48c3-912e-7a7c091779b5/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/679bb5dc-ca56-41d7-9e1f-7cb0377dd45b/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0b38a7f4-2774-4052-b227-726e568f7642/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6463ef39-d844-48c3-912e-7a7c091779b5/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/679bb5dc-ca56-41d7-9e1f-7cb0377dd45b/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_increase_cart_item_count_after_clicking_Add_to_Cart_button" time="0.095">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/e4898744-fd07-4f37-85a0-154622c451aa/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0b38a7f4-2774-4052-b227-726e568f7642/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/5867f6f0-b528-4fef-be70-7505838b30fc/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/b99e5df3-8016-412b-b1b7-25f67f7d0d19/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/e4898744-fd07-4f37-85a0-154622c451aa/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_decrease_cart_item_count_after_clicking_Remove_button" time="0.073">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/e4898744-fd07-4f37-85a0-154622c451aa/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0b38a7f4-2774-4052-b227-726e568f7642/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/5867f6f0-b528-4fef-be70-7505838b30fc/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/b99e5df3-8016-412b-b1b7-25f67f7d0d19/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/e4898744-fd07-4f37-85a0-154622c451aa/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_change_button_text_after_clicking_Remove_button" time="0.11">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0b38a7f4-2774-4052-b227-726e568f7642/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6463ef39-d844-48c3-912e-7a7c091779b5/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/679bb5dc-ca56-41d7-9e1f-7cb0377dd45b/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0b38a7f4-2774-4052-b227-726e568f7642/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6463ef39-d844-48c3-912e-7a7c091779b5/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/679bb5dc-ca56-41d7-9e1f-7cb0377dd45b/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0b38a7f4-2774-4052-b227-726e568f7642/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6463ef39-d844-48c3-912e-7a7c091779b5/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/679bb5dc-ca56-41d7-9e1f-7cb0377dd45b/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_hide_cart_item_count_when_there_are_zero_0_items" time="0.018">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_navigate_to_respective_item_details_when_clicking_first_item_name" time="0.254">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0b38a7f4-2774-4052-b227-726e568f7642/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6463ef39-d844-48c3-912e-7a7c091779b5/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/4e27c765-70e6-4cda-bf34-5d66dc746565/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0b38a7f4-2774-4052-b227-726e568f7642/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6463ef39-d844-48c3-912e-7a7c091779b5/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/4e27c765-70e6-4cda-bf34-5d66dc746565/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_name"}
+RESULT: {"using":"css selector","value":".inventory_details_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d87a5e88-ecc8-4fb4-b135-14c55144a73c/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_navigate_to_respective_item_details_when_clicking_last_item_name" time="0.364">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/back - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/980d1ab5-bee1-43ca-b26d-1ad9d7cab7a6/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/f6241912-aee2-4e0e-9b8a-f37b90525c33/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/9a82ba3d-ddad-48e6-8f0e-699e60d54ec9/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/980d1ab5-bee1-43ca-b26d-1ad9d7cab7a6/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/f6241912-aee2-4e0e-9b8a-f37b90525c33/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/9a82ba3d-ddad-48e6-8f0e-699e60d54ec9/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_name"}
+RESULT: {"using":"css selector","value":".inventory_details_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6ed0cefe-1000-4a62-907d-46cbd79320db/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_navigate_to_respective_item_details_when_clicking_a_random_item_name" time="0.366">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/back - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/c11c287b-6ad0-401b-9b4a-4c629bc44ee3/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/3f8cdb8b-5c85-4dd7-bac4-e618896d4acf/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0a032f76-7710-4857-8654-c666bdcb7ce6/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/c11c287b-6ad0-401b-9b4a-4c629bc44ee3/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/3f8cdb8b-5c85-4dd7-bac4-e618896d4acf/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0a032f76-7710-4857-8654-c666bdcb7ce6/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_name"}
+RESULT: {"using":"css selector","value":".inventory_details_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/ca8a9467-b082-4d58-b917-caa4f99deb93/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_navigate_to_item_details_when_clicking_first_item_image" time="0.237">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/back - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/c059a7c1-4133-4424-a26f-08e491dbdd6a/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/22c5f96a-eda2-40db-9b02-e416ca0473eb/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/423687cf-3526-4580-9683-e6c811392044/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/c059a7c1-4133-4424-a26f-08e491dbdd6a/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/22c5f96a-eda2-40db-9b02-e416ca0473eb/element - {"using":"css selector","value":".inventory_item_img"}
+RESULT: {"using":"css selector","value":".inventory_item_img"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/09c51770-5c29-4aa5-b9a4-8c442f03a300/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_name"}
+RESULT: {"using":"css selector","value":".inventory_details_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/05b14d0c-d498-4b55-bc05-f71d16438882/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_navigate_to_respective_item_details_when_clicking_last_item_image" time="0.251">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/back - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/13f041c0-c351-4c43-ae96-d2b248bb2bdf/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/7eb069ed-4369-4ca5-bd81-7ee287294ac0/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/98c5d42b-1ab1-4531-86d9-51b8dbf692c7/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/13f041c0-c351-4c43-ae96-d2b248bb2bdf/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/7eb069ed-4369-4ca5-bd81-7ee287294ac0/element - {"using":"css selector","value":".inventory_item_img"}
+RESULT: {"using":"css selector","value":".inventory_item_img"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d6a233de-847b-4f9b-80fc-1f7b679f9ded/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_name"}
+RESULT: {"using":"css selector","value":".inventory_details_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/4f2361bc-4fe9-43d4-a7d7-3951f144cd31/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_navigate_to_respective_item_details_when_clicking_a_random_item_image" time="0.27">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/back - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6ea1f73f-0ab2-4aa8-94b4-6aae0af0b5aa/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6e36d995-9c34-42ec-9ffa-163d3b3a0f2f/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/c00557df-a6ea-408d-83b1-2b6a9f6b2018/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6ea1f73f-0ab2-4aa8-94b4-6aae0af0b5aa/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/6e36d995-9c34-42ec-9ffa-163d3b3a0f2f/element - {"using":"css selector","value":".inventory_item_img"}
+RESULT: {"using":"css selector","value":".inventory_item_img"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/3fe42715-0d08-42cd-bd1c-524a81bbd9f9/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_details_name"}
+RESULT: {"using":"css selector","value":".inventory_details_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/77a37da4-7090-4f39-b23e-6fe82d03de7a/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_should_have_four_4_types_of_sort_details" time="0.109">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/back - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/elements - {"using":"css selector","value":"option"}
+RESULT: {"using":"css selector","value":"option"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_sort_by_alphabetical_order_ascending_by_default" time="0.012">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/property/value - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_show_more_expensive_items_first_when_sorting_by_price_descending" time="0.512">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/elements - {"using":"css selector","value":"option"}
+RESULT: {"using":"css selector","value":"option"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/c82a7970-8e8a-4eea-aff5-599e1f342ef1/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/property/value - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/2c728f72-99cb-4092-b63b-4d1e720c77e8/element - {"using":"css selector","value":".inventory_item_price"}
+RESULT: {"using":"css selector","value":".inventory_item_price"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/e50d45a4-f05e-4175-b064-f873b95ecceb/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/78ce45ae-8ce1-46e9-9965-16b315ebc960/element - {"using":"css selector","value":".inventory_item_price"}
+RESULT: {"using":"css selector","value":".inventory_item_price"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/f608999e-8631-4490-8d20-e85159339b26/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0dbb95e8-548d-47b4-be71-bb553097b18c/element - {"using":"css selector","value":".inventory_item_price"}
+RESULT: {"using":"css selector","value":".inventory_item_price"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/e6002064-afd6-49a6-964c-e8fd394f2209/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_show_cheaper_items_first_when_sorting_by_price_ascending" time="0.446">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/elements - {"using":"css selector","value":"option"}
+RESULT: {"using":"css selector","value":"option"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/238d32f5-0cf5-4192-a2a6-b280a73d7d5e/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/property/value - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/1a1e391a-f1b9-41dd-bbdf-1ffbe242e19a/element - {"using":"css selector","value":".inventory_item_price"}
+RESULT: {"using":"css selector","value":".inventory_item_price"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/e14d94f7-0ba2-4f53-8c9b-1f8df5ac3470/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/cadb13c2-f4ff-4ac3-b05b-cd2596b89f33/element - {"using":"css selector","value":".inventory_item_price"}
+RESULT: {"using":"css selector","value":".inventory_item_price"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/05c2fed9-ba2c-4f4a-9a56-476c935cbcbc/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/184790fc-b40b-4b51-bdec-cb5c83d332a4/element - {"using":"css selector","value":".inventory_item_price"}
+RESULT: {"using":"css selector","value":".inventory_item_price"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d27e4220-45ef-41d1-bc88-d911545b1815/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_re_order_items_by_alphabetical_order_when_sorting_by_alphabet_ascending" time="0.497">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/elements - {"using":"css selector","value":"option"}
+RESULT: {"using":"css selector","value":"option"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/71007098-e2a5-45a1-9054-643994636398/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/property/value - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/78ce45ae-8ce1-46e9-9965-16b315ebc960/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/9a1fb47d-cfa8-4c76-9ede-92103f77950c/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/cadb13c2-f4ff-4ac3-b05b-cd2596b89f33/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/bfbcbbfc-82d1-4ac6-9507-a2dcbd34c9ba/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/184790fc-b40b-4b51-bdec-cb5c83d332a4/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/efbabcd5-d12e-4d6a-a83b-ea90b239bddf/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Functionality" name="should_re_order_items_by_alphabetical_order_when_sorting_by_alphabet_ascending" time="0.443">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/elements - {"using":"css selector","value":"option"}
+RESULT: {"using":"css selector","value":"option"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/b9d192bf-3e15-4c03-8d44-2324b81a52c1/click - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".product_sort_container"}
+RESULT: {"using":"css selector","value":".product_sort_container"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/d2997206-5471-4fb0-b538-c3a6566c296f/property/value - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/elements - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/0dbb95e8-548d-47b4-be71-bb553097b18c/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/89b713c4-3418-4223-a1f3-597d03006b45/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/1a1e391a-f1b9-41dd-bbdf-1ffbe242e19a/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/8773d2d6-a14d-49e7-8580-c92967a10974/text - {}
+RESULT: {}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element - {"using":"css selector","value":".inventory_list"}
+RESULT: {"using":"css selector","value":".inventory_list"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/84b930f9-43b9-440c-ab4b-812df6181213/elements - {"using":"css selector","value":".inventory_item"}
+RESULT: {"using":"css selector","value":".inventory_item"}
+COMMAND: POST /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/2c728f72-99cb-4092-b63b-4d1e720c77e8/element - {"using":"css selector","value":".inventory_item_name"}
+RESULT: {"using":"css selector","value":".inventory_item_name"}
+COMMAND: GET /session/4eedc2b62e5752d3a2ecaab7e28358d3/element/69591930-bda5-439b-8925-87dff5f0af83/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="E2E_Tests_Inventory_Page_Design" timestamp="2020-08-05T10:42:51" time="0.002" tests="3" failures="0" errors="0" skipped="3">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="E2E Tests - Inventory Page - Design"/>
+      <property name="capabilities" value="chrome.84_0_4147_105.macosx"/>
+      <property name="file" value="./test/specs/pages/inventory.js"/>
+    </properties>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Design" name="should_have_a_Products_title" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Design" name="should_display_products_as_two_2_columns_of_three_3_in_desktop_size" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Inventory_Page_Design" name="should_display_products_as_one_1_column_of_six_6_in_mobile_size" time="0">
+      <skipped/>
+      <system-out>
+        <![CDATA[
+COMMAND: DELETE /session/4eedc2b62e5752d3a2ecaab7e28358d3 - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

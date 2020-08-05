@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="E2E_Tests_Item_Detail_Page_Functionality" timestamp="2020-08-05T10:42:53" time="20.216" tests="7" failures="0" errors="0" skipped="1">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="E2E Tests - Item Detail Page - Functionality"/>
+      <property name="capabilities" value="chrome.84_0_4147_105.macosx"/>
+      <property name="file" value="./test/specs/pages/itemDetail.js"/>
+    </properties>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Item_Detail_Page_Functionality" name="should_load_an_Item_Detail_page" time="4.116">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/url - {"url":"https://www.saucedemo.com/inventory-item.html?id=1"}
+RESULT: {"url":"https://www.saucedemo.com/inventory-item.html?id=1"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/elements - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":"#menu_button_container"}
+RESULT: {"using":"css selector","value":"#menu_button_container"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/elements - {"using":"css selector","value":"#menu_button_container"}
+RESULT: {"using":"css selector","value":"#menu_button_container"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".bm-item-list"}
+RESULT: {"using":"css selector","value":".bm-item-list"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/elements - {"using":"css selector","value":".bm-item-list"}
+RESULT: {"using":"css selector","value":".bm-item-list"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".bm-burger-button"}
+RESULT: {"using":"css selector","value":".bm-burger-button"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element/dc08b796-1eae-4389-b7e9-40aa524180c6/click - {}
+RESULT: {}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":"#menu_button_container"}
+RESULT: {"using":"css selector","value":"#menu_button_container"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element/54d39468-ef74-42b7-90e7-3523e208fc0f/elements - {"using":"css selector","value":".menu-item"}
+RESULT: {"using":"css selector","value":".menu-item"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element/780a42cf-e29c-42c3-9045-420b7d7628a2/click - {}
+RESULT: {}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".bm-cross-button"}
+RESULT: {"using":"css selector","value":".bm-cross-button"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element/8e55c9ac-27fb-435c-b635-2fd2b2d2cd8f/click - {}
+RESULT: {}
+COMMAND: GET /session/1c79df0fb6c372279e4165d3972d6095/url - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Item_Detail_Page_Functionality" name="should_go_to_previous_page_after_clicking_Back_button" time="0.728">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/url - {"url":"https://www.saucedemo.com/inventory-item.html?id=4"}
+RESULT: {"url":"https://www.saucedemo.com/inventory-item.html?id=4"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/elements - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".inventory_details_back_button"}
+RESULT: {"using":"css selector","value":".inventory_details_back_button"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element/c8067ef1-85fd-45c0-ad20-f9468ebb8734/click - {}
+RESULT: {}
+COMMAND: GET /session/1c79df0fb6c372279e4165d3972d6095/url - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Item_Detail_Page_Functionality" name="should_go_to_empty_tab_after_clicking_Back_button_if_coming_from_new_tab" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Item_Detail_Page_Functionality" name="should_change_button_text_after_clicking_Add_to_Cart_button" time="6.139">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/url - {"url":"https://www.saucedemo.com/inventory-item.html?id=1"}
+RESULT: {"url":"https://www.saucedemo.com/inventory-item.html?id=1"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/elements - {"using":"css selector","value":".inventory_details_container"}
+RESULT: {"using":"css selector","value":".inventory_details_container"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: GET /session/1c79df0fb6c372279e4165d3972d6095/element/f015d04b-d980-4c2a-8803-3463f74adee9/text - {}
+RESULT: {}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element/f015d04b-d980-4c2a-8803-3463f74adee9/click - {}
+RESULT: {}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: GET /session/1c79df0fb6c372279e4165d3972d6095/element/f015d04b-d980-4c2a-8803-3463f74adee9/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Item_Detail_Page_Functionality" name="should_change_button_text_after_clicking_Remove_button" time="3.076">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: GET /session/1c79df0fb6c372279e4165d3972d6095/element/f015d04b-d980-4c2a-8803-3463f74adee9/text - {}
+RESULT: {}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element/f015d04b-d980-4c2a-8803-3463f74adee9/click - {}
+RESULT: {}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: GET /session/1c79df0fb6c372279e4165d3972d6095/element/f015d04b-d980-4c2a-8803-3463f74adee9/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Item_Detail_Page_Functionality" name="should_increase_cart_item_count_after_clicking_Add_to_Cart_button" time="3.087">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element/f015d04b-d980-4c2a-8803-3463f74adee9/click - {}
+RESULT: {}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+COMMAND: GET /session/1c79df0fb6c372279e4165d3972d6095/element/9236fc8a-7614-466c-b552-e1a00182e4a7/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Item_Detail_Page_Functionality" name="should_decrease_cart_item_count_after_clicking_Remove_button" time="3.069">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+COMMAND: GET /session/1c79df0fb6c372279e4165d3972d6095/element/9236fc8a-7614-466c-b552-e1a00182e4a7/text - {}
+RESULT: {}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".btn_inventory"}
+RESULT: {"using":"css selector","value":".btn_inventory"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element/f015d04b-d980-4c2a-8803-3463f74adee9/click - {}
+RESULT: {}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+COMMAND: POST /session/1c79df0fb6c372279e4165d3972d6095/element - {"using":"css selector","value":".shopping_cart_badge"}
+RESULT: {"using":"css selector","value":".shopping_cart_badge"}
+COMMAND: DELETE /session/1c79df0fb6c372279e4165d3972d6095 - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="E2E_Tests_Login_Page_Functionality" timestamp="2020-08-05T10:43:15" time="12.583" tests="12" failures="0" errors="0" skipped="1">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="E2E Tests - Login Page - Functionality"/>
+      <property name="capabilities" value="chrome.84_0_4147_105.macosx"/>
+      <property name="file" value="./test/specs/pages/login.js"/>
+    </properties>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_load_Login_Page" time="6.595">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/url - {"url":"https://www.saucedemo.com/index.html"}
+RESULT: {"url":"https://www.saucedemo.com/index.html"}
+COMMAND: GET /session/236ac38eda46fab2e7bd1ebd6b1163de/url - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_have_a_login_form" time="0.048">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"form"}
+RESULT: {"using":"css selector","value":"form"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/elements - {"using":"css selector","value":"form"}
+RESULT: {"using":"css selector","value":"form"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"form"}
+RESULT: {"using":"css selector","value":"form"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/execute/sync - {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"57435654-e39d-42ce-8c1f-e88f084776a1","ELEMENT":"57435654-e39d-42ce-8c1f-e88f084776a1"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"57435654-e39d-42ce-8c1f-e88f084776a1","ELEMENT":"57435654-e39d-42ce-8c1f-e88f084776a1"}]}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_not_show_error_message_when_first_loading" time="0.021">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_show_error_message_when_empty_form_is_submitted" time="0.298">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/796975a9-88ee-4df3-9192-c7bfb0267457/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/796975a9-88ee-4df3-9192-c7bfb0267457/value - {"text":""}
+RESULT: {"text":""}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/14570ee8-d3d1-43e6-96d3-e3535ba2ab41/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/14570ee8-d3d1-43e6-96d3-e3535ba2ab41/value - {"text":""}
+RESULT: {"text":""}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f85c1810-3b4b-4e10-b783-e83eb69c810e/click - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/elements - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/execute/sync - {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d672afd6-2444-445f-85d9-a3f56f2a4789","ELEMENT":"d672afd6-2444-445f-85d9-a3f56f2a4789"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d672afd6-2444-445f-85d9-a3f56f2a4789","ELEMENT":"d672afd6-2444-445f-85d9-a3f56f2a4789"}]}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: GET /session/236ac38eda46fab2e7bd1ebd6b1163de/element/d783e662-d830-487f-8f2b-7eb8b88dc8f9/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_remove_the_error_after_refreshing" time="0.171">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/refresh - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_show_error_when_leaving_password_blank" time="0.251">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/value - {"text":"test"}
+RESULT: {"text":"test"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/value - {"text":""}
+RESULT: {"text":""}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/46e97962-b34b-4fee-ae85-87f50b55749a/click - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/elements - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/execute/sync - {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"de38f887-f3e2-44cc-aa19-e95b8a0c870b","ELEMENT":"de38f887-f3e2-44cc-aa19-e95b8a0c870b"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"de38f887-f3e2-44cc-aa19-e95b8a0c870b","ELEMENT":"de38f887-f3e2-44cc-aa19-e95b8a0c870b"}]}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: GET /session/236ac38eda46fab2e7bd1ebd6b1163de/element/aec7df49-2ef2-4b39-a82d-d140d84e9cee/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_show_error_when_leaving_username_blank" time="0.267">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"7248d869-eee5-477b-a3cf-1e410188afd8","element-6066-11e4-a52e-4f735466cecf":"7248d869-eee5-477b-a3cf-1e410188afd8","selector":"#user-name","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"7248d869-eee5-477b-a3cf-1e410188afd8","element-6066-11e4-a52e-4f735466cecf":"7248d869-eee5-477b-a3cf-1e410188afd8","selector":"#user-name","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"f851b0f0-a562-4c58-8517-b0317518d759","element-6066-11e4-a52e-4f735466cecf":"f851b0f0-a562-4c58-8517-b0317518d759","selector":"#password","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"f851b0f0-a562-4c58-8517-b0317518d759","element-6066-11e4-a52e-4f735466cecf":"f851b0f0-a562-4c58-8517-b0317518d759","selector":"#password","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/value - {"text":""}
+RESULT: {"text":""}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/value - {"text":"test"}
+RESULT: {"text":"test"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/46e97962-b34b-4fee-ae85-87f50b55749a/click - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/elements - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/execute/sync - {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"de38f887-f3e2-44cc-aa19-e95b8a0c870b","ELEMENT":"de38f887-f3e2-44cc-aa19-e95b8a0c870b"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"de38f887-f3e2-44cc-aa19-e95b8a0c870b","ELEMENT":"de38f887-f3e2-44cc-aa19-e95b8a0c870b"}]}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: GET /session/236ac38eda46fab2e7bd1ebd6b1163de/element/aec7df49-2ef2-4b39-a82d-d140d84e9cee/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_show_error_when_using_wrong_values" time="0.261">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"7248d869-eee5-477b-a3cf-1e410188afd8","element-6066-11e4-a52e-4f735466cecf":"7248d869-eee5-477b-a3cf-1e410188afd8","selector":"#user-name","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"7248d869-eee5-477b-a3cf-1e410188afd8","element-6066-11e4-a52e-4f735466cecf":"7248d869-eee5-477b-a3cf-1e410188afd8","selector":"#user-name","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"f851b0f0-a562-4c58-8517-b0317518d759","element-6066-11e4-a52e-4f735466cecf":"f851b0f0-a562-4c58-8517-b0317518d759","selector":"#password","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"f851b0f0-a562-4c58-8517-b0317518d759","element-6066-11e4-a52e-4f735466cecf":"f851b0f0-a562-4c58-8517-b0317518d759","selector":"#password","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/value - {"text":"test"}
+RESULT: {"text":"test"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/value - {"text":"test"}
+RESULT: {"text":"test"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/46e97962-b34b-4fee-ae85-87f50b55749a/click - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/elements - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/execute/sync - {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"de38f887-f3e2-44cc-aa19-e95b8a0c870b","ELEMENT":"de38f887-f3e2-44cc-aa19-e95b8a0c870b"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"de38f887-f3e2-44cc-aa19-e95b8a0c870b","ELEMENT":"de38f887-f3e2-44cc-aa19-e95b8a0c870b"}]}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: GET /session/236ac38eda46fab2e7bd1ebd6b1163de/element/aec7df49-2ef2-4b39-a82d-d140d84e9cee/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_show_error_when_using_blank_spaces" time="0.266">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"7248d869-eee5-477b-a3cf-1e410188afd8","element-6066-11e4-a52e-4f735466cecf":"7248d869-eee5-477b-a3cf-1e410188afd8","selector":"#user-name","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"7248d869-eee5-477b-a3cf-1e410188afd8","element-6066-11e4-a52e-4f735466cecf":"7248d869-eee5-477b-a3cf-1e410188afd8","selector":"#user-name","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"f851b0f0-a562-4c58-8517-b0317518d759","element-6066-11e4-a52e-4f735466cecf":"f851b0f0-a562-4c58-8517-b0317518d759","selector":"#password","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"f851b0f0-a562-4c58-8517-b0317518d759","element-6066-11e4-a52e-4f735466cecf":"f851b0f0-a562-4c58-8517-b0317518d759","selector":"#password","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/value - {"text":""}
+RESULT: {"text":""}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/value - {"text":""}
+RESULT: {"text":""}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/46e97962-b34b-4fee-ae85-87f50b55749a/click - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/elements - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/execute/sync - {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"de38f887-f3e2-44cc-aa19-e95b8a0c870b","ELEMENT":"de38f887-f3e2-44cc-aa19-e95b8a0c870b"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"de38f887-f3e2-44cc-aa19-e95b8a0c870b","ELEMENT":"de38f887-f3e2-44cc-aa19-e95b8a0c870b"}]}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: GET /session/236ac38eda46fab2e7bd1ebd6b1163de/element/aec7df49-2ef2-4b39-a82d-d140d84e9cee/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_show_error_when_user_is_locked_out" time="0.318">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"7248d869-eee5-477b-a3cf-1e410188afd8","element-6066-11e4-a52e-4f735466cecf":"7248d869-eee5-477b-a3cf-1e410188afd8","selector":"#user-name","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"7248d869-eee5-477b-a3cf-1e410188afd8","element-6066-11e4-a52e-4f735466cecf":"7248d869-eee5-477b-a3cf-1e410188afd8","selector":"#user-name","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"f851b0f0-a562-4c58-8517-b0317518d759","element-6066-11e4-a52e-4f735466cecf":"f851b0f0-a562-4c58-8517-b0317518d759","selector":"#password","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"f851b0f0-a562-4c58-8517-b0317518d759","element-6066-11e4-a52e-4f735466cecf":"f851b0f0-a562-4c58-8517-b0317518d759","selector":"#password","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/value - {"text":"locked_out_user"}
+RESULT: {"text":"locked_out_user"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/value - {"text":"secret_sauce"}
+RESULT: {"text":"secret_sauce"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/46e97962-b34b-4fee-ae85-87f50b55749a/click - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/elements - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/execute/sync - {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"de38f887-f3e2-44cc-aa19-e95b8a0c870b","ELEMENT":"de38f887-f3e2-44cc-aa19-e95b8a0c870b"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n  function nodeIsElement(node) {\n    if (!node) {\n      return false;\n    }\n\n    switch (node.nodeType) {\n      case Node.ELEMENT_NODE:\n      case Node.D ... (4720 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"de38f887-f3e2-44cc-aa19-e95b8a0c870b","ELEMENT":"de38f887-f3e2-44cc-aa19-e95b8a0c870b"}]}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"[data-test=\"error\"]"}
+RESULT: {"using":"css selector","value":"[data-test=\"error\"]"}
+COMMAND: GET /session/236ac38eda46fab2e7bd1ebd6b1163de/element/aec7df49-2ef2-4b39-a82d-d140d84e9cee/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_not_allow_navigation_before_logging_in" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Functionality" name="should_navigate_to_inventory_when_using_correct_credentials" time="4.085">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"7248d869-eee5-477b-a3cf-1e410188afd8","element-6066-11e4-a52e-4f735466cecf":"7248d869-eee5-477b-a3cf-1e410188afd8","selector":"#user-name","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"7248d869-eee5-477b-a3cf-1e410188afd8","element-6066-11e4-a52e-4f735466cecf":"7248d869-eee5-477b-a3cf-1e410188afd8","selector":"#user-name","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"f851b0f0-a562-4c58-8517-b0317518d759","element-6066-11e4-a52e-4f735466cecf":"f851b0f0-a562-4c58-8517-b0317518d759","selector":"#password","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"pointer1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","origin":{"sessionId":"236ac38eda46fab2e7bd1ebd6b1163de","elementId":"f851b0f0-a562-4c58-8517-b0317518d759","element-6066-11e4-a52e-4f735466cecf":"f851b0f0-a562-4c58-8517-b0317518d759","selector":"#password","parent":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})","userDataDir":"/var/folders/zh/k9br3kvj1zqdfzcn76p_j70w0000gp/T/.com.google.Chrome.xUVfDr"},"goog:chromeOptions":{"debuggerAddress":"localhost:50525"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"_":"4 more keys: [\"strictFileInteractability\",\"timeouts\",\"unhandledPromptBehavior\",\"webauthn:virtualAuthenticators\"]"},"config":{"specs":["./test/specs/**/*.js"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"mocha","_":"40 more keys: [\"reporters\",\"services\",\"maxInstances\",\"maxInstancesPerCapability\",\"filesToWatch\",\"connectionRetryTimeout\",\"connectionRetryCount\",\"execArgv\",\"runnerEnv\",\"runner\",\"mochaOpts\",\"jasmineNodeOpts\",\"cucumberOpts\",\"onPrepare\",\"onWorkerStart\",\"before\",\"beforeSession\",\"beforeSuite\",\"beforeHook\",\"beforeTest\",\"beforeCommand\",\"afterCommand\",\"afterTest\",\"afterHook\",\"afterSuite\",\"afterSession\",\"after\",\"onComplete\",\"onReload\",\"beforeFeature\",\"beforeScenario\",\"beforeStep\",\"afterStep\",\"afterScenario\",\"afterFeature\",\"baseUrl\",\"_\",\"$0\",\"ignoredWorkerServices\",\"specFileRetryAttempts\"]"},"_NOT_FIBER":true},"isReactElement":false,"_NOT_FIBER":false},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0},{"type":"pause","duration":10},{"type":"pointerDown","button":0},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+RESULT: {"actions":[{"type":"key","id":"keyboard","actions":[{"type":"keyDown","value":""},{"type":"keyUp","value":""}]}]}
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de/actions - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#user-name"}
+RESULT: {"using":"css selector","value":"#user-name"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/7248d869-eee5-477b-a3cf-1e410188afd8/value - {"text":"standard_user"}
+RESULT: {"text":"standard_user"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/clear - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/f851b0f0-a562-4c58-8517-b0317518d759/value - {"text":"secret_sauce"}
+RESULT: {"text":"secret_sauce"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":"#login-button"}
+RESULT: {"using":"css selector","value":"#login-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element/46e97962-b34b-4fee-ae85-87f50b55749a/click - {}
+RESULT: {}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+COMMAND: POST /session/236ac38eda46fab2e7bd1ebd6b1163de/element - {"using":"css selector","value":".error-button"}
+RESULT: {"using":"css selector","value":".error-button"}
+COMMAND: GET /session/236ac38eda46fab2e7bd1ebd6b1163de/url - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="E2E_Tests_Login_Page_Design" timestamp="2020-08-05T10:43:28" time="0.001" tests="5" failures="0" errors="0" skipped="5">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="E2E Tests - Login Page - Design"/>
+      <property name="capabilities" value="chrome.84_0_4147_105.macosx"/>
+      <property name="file" value="./test/specs/pages/login.js"/>
+    </properties>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Design" name="should_have_the_login_form_and_bot_image_horizontally_alligned_in_desktop_view" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Design" name="should_have_the_login_form_above_the_bot_image_in_mobile_view" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Design" name="username_and_password_inputs_should_be_same_length" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Design" name="should_list_four_4_usernames" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.84_0_4147_105.macosx.E2E_Tests_Login_Page_Design" name="should_list_one_1_password" time="0">
+      <skipped/>
+      <system-out>
+        <![CDATA[
+COMMAND: DELETE /session/236ac38eda46fab2e7bd1ebd6b1163de - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
